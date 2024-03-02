@@ -6,19 +6,23 @@
     margin: 0;
     box-sizing: border-box;
 }
-.nav-items{
+
+/* -------------------------------navbar styles------------------------------- */
+.nav-items {
     width: 40%;
     height: 100%;
 }
+
 .nav-items>ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 100%;
-    
+
 }
-.nav-items>ul>li{
+
+.nav-items>ul>li {
     margin-right: 20px;
 }
 
@@ -54,13 +58,76 @@ nav {
     margin-right: 15px;
 }
 
+/* -------------------------------banner styles------------------------------- */
+.banner-section {
+    width: 80%;
+    margin: auto;
+    height: 700px;
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    margin-top: 20px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-section-heading {
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
+
+.banner-section-des {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 70px;
+    width: 70%
+}
+
+.banner-section-form {
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.banner-section-form>input,
+select,
+button {
+    width: 174px;
+    height: 60px;
+    font-size: 20px;
+    padding: 15px;
+    color: rgba(19, 19, 24, 0.50);
+    border-radius: 8px;
+    border: none;
+}
+
+.banner-section-form>button {
+    background: #FF5400;
+    color: white;
+
+}
+
 @media screen and (max-width: 600px) {
-    .hide-small{
+
+    /* -------------------------------navbar styles responsive------------------------------- */
+    .hide-small {
         display: none;
     }
 }
+
 @media screen and (min-width: 600px) {
-    .hide-big{
+
+    /* -------------------------------navbar styles responsive------------------------------- */
+    .hide-big {
         display: none;
     }
 }
