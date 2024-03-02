@@ -62,10 +62,11 @@ nav {
 .banner-section {
     width: 80%;
     margin: auto;
-    height: 700px;
+    height: 600px;
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     border-radius: 16px;
     margin-top: 20px;
     color: #FFF;
@@ -122,6 +123,47 @@ button {
     .hide-small {
         display: none;
     }
+
+    /* -------------------------------banner styles responsive------------------------------- */
+    .banner-section {
+        height: 500px;
+    }
+
+    .banner-section-heading {
+        font-size: 22px;
+        font-weight: 800;
+        margin-bottom: 10px;
+        margin-top: 35px;
+    }
+
+    .banner-section-des {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .banner-section-form {
+        display: flex;
+        width: 287px;
+        padding: 16px;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin-top: 0px;
+    }
+
+    .banner-section-form>input,
+    select,
+    button {
+        width: 255px;
+        height: 52px;
+    }
+
+
+
+
 }
 
 @media screen and (min-width: 600px) {
