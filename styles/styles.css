@@ -442,7 +442,77 @@ footer {
     height: 1px;
 }
 
+/* -------------------------------top travel stories styles------------------------------- */
+.top-travel-stories {
+    margin-top: 100px;
+}
 
+.top-travel-stories-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-travel-stories-text>h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.top-travel-stories-text>p {
+    width: 50%;
+    color: rgba(19, 19, 24, 0.70);
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.top-travel-stories-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-travel-stories>div>button {
+    width: auto;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content p {
+    margin-bottom: 10px;
+    color: rgba(19, 19, 24, 0.70);
+}
+
+.read-more {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #FF5400;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.read-more:hover {
+    background-color: #b4450e;
+}
 
 
 @media screen and (max-width: 600px) {
@@ -595,23 +665,40 @@ footer {
         height: 79.268px;
         transform: rotate(-19.628deg);
     }
-/* -------------------------------footer responsive------------------------------- */
 
-footer {
-    width: 100%;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.footer-section hr {
+    /* -------------------------------footer responsive------------------------------- */
 
-    width: 100%;
-}
+    footer {
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .footer-section hr {
+        width: 100%;
+    }
 
+    /* -------------------------------top travel stories responsive------------------------------- */
 
+    .top-travel-stories-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-travel-stories-text>h1 {
+        font-size: 20px;
+        font-weight: 800;
+    }
+    
+    .top-travel-stories-text>p {
+        font-size: 14px;
+    }
+    .top-travel-stories>div>button {
+        width: 255px;
+        height: 52px;
+    }
 
 }
 
