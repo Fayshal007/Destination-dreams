@@ -197,7 +197,8 @@ main {
     font-weight: 400;
     text-align: center;
 }
-.destination-gallery{
+
+.destination-gallery {
     width: 100%;
 }
 
@@ -221,7 +222,7 @@ main {
     display: inline-block;
 }
 
-.destination-gallery-row-image > img {
+.destination-gallery-row-image>img {
     display: block;
     max-width: 100%;
 }
@@ -235,23 +236,84 @@ main {
     font-size: 28px;
     font-weight: 800;
 }
-.srilanka{
+
+.srilanka {
     width: 35%;
 }
-.north-america{
+
+.north-america {
     width: 40%;
 }
-.kashmir{
+
+.kashmir {
     width: 25%;
 }
-.bangladesh{
+
+.bangladesh {
     width: 45%;
 }
-.bandarban{
+
+.bandarban {
     width: 65%;
 }
 
+/* -------------------------------why choose styles------------------------------- */
+.choose-text {
+    margin: 100px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.choose-text>h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 20px 0px;
+}
+
+.choose-text>p {
+    width: 50%;
+    text-align: center;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.choose-box {
+    width: calc((100% - 40px)/ 2);
+    border-radius: 16px;
+}
+
+.choose-box i {
+    font-size: 50px;
+    padding: 20px;
+}
+
+.choose-box>h1 {
+    font-size: 24px;
+    font-weight: 800;
+    padding-left: 20px;
+}
+
+.choose-box>p {
+    color: #5A5A5D;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.choose-boxes-row1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.choose-boxes-row2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
 
 
 
@@ -342,24 +404,49 @@ main {
     .destination-text>p {
         font-size: 14px;
     }
-    .srilanka{
-        width: auto;
-    }
-    .north-america{
-        width: auto;
-    }
-    .kashmir{
-        width: auto;
-    }
-    .bangladesh{
-        width: auto;
-    }
-    .bandarban{
+
+    .srilanka {
         width: auto;
     }
 
+    .north-america {
+        width: auto;
+    }
 
+    .kashmir {
+        width: auto;
+    }
 
+    .bangladesh {
+        width: auto;
+    }
+
+    .bandarban {
+        width: auto;
+    }
+
+    /* -------------------------------why choose responsive------------------------------- */
+    .choose-box {
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    .choose-boxes-row1 {
+        flex-direction: column;
+    }
+
+    .choose-boxes-row1>div {
+        margin: 20px 0px;
+    }
+
+    .choose-text>h1 {
+        font-size: 20px;
+    }
+
+    .choose-text>p {
+        width: 80%;
+        font-size: 14px;
+    }
 
 
 
